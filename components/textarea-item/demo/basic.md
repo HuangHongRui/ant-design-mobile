@@ -14,7 +14,7 @@ title:
 Recommended use of [rc-form ](https://github.com/react-component/form) for controlled component.
 
 ````jsx
-import { List, TextareaItem } from 'antd-mobile';
+import { List, TextareaItem } from 'antd-mobile-rui';
 import { createForm } from 'rc-form';
 
 class TextareaItemExample extends React.Component {

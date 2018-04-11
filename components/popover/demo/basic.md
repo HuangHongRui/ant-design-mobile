@@ -7,7 +7,7 @@ title:
 
 
 ````jsx
-import { Popover, NavBar, Icon } from 'antd-mobile';
+import { Popover, NavBar, Icon } from 'antd-mobile-rui';
 
 const Item = Popover.Item;
 

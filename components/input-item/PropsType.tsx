@@ -18,6 +18,8 @@ export interface InputItemPropsType {
   value?: string;
   defaultValue?: string;
   placeholder?: string;
+  // Company Pro | 自定义
+  custom_placeholder?: React.ReactNode;
   clear?: boolean;
   maxLength?: number;
   extra?: React.ReactNode;
@@ -31,7 +33,8 @@ export interface InputItemPropsType {
   updatePlaceholder?: boolean;
   styles?: any;
   locale?: object;
-  onChange?: InputEventHandler;
+  // Company Pro | Function
+  onChange?: InputEventHandler | any;
   onFocus?: InputEventHandler;
   onBlur?: InputEventHandler;
 }

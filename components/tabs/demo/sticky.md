@@ -8,7 +8,7 @@ title:
 use react-sticky
 
 ````jsx
-import { Tabs, WhiteSpace } from 'antd-mobile';
+import { Tabs, WhiteSpace } from 'antd-mobile-rui';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 function renderTabBar(props) {

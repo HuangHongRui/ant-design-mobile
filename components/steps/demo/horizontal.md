@@ -6,7 +6,7 @@ title:
 ---
 
 ````jsx
-import { Steps, WingBlank, WhiteSpace } from 'antd-mobile';
+import { Steps, WingBlank, WhiteSpace } from 'antd-mobile-rui';
 
 const Step = Steps.Step;
 

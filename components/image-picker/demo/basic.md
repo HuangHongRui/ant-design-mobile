@@ -6,7 +6,7 @@ title:
 ---
 
 ````jsx
-import { ImagePicker, WingBlank, SegmentedControl } from 'antd-mobile';
+import { ImagePicker, WingBlank, SegmentedControl } from 'antd-mobile-rui';
 
 const data = [{
   url: 'https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg',

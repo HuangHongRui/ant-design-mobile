@@ -14,7 +14,7 @@ Card 默认样式
 Default Card
 
 ````jsx
-import { Card, WingBlank, WhiteSpace } from 'antd-mobile';
+import { Card, WingBlank, WhiteSpace } from 'antd-mobile-rui';
 
 ReactDOM.render(
   <WingBlank size="lg">

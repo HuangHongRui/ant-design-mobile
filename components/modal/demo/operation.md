@@ -14,7 +14,7 @@ title:
 Modal with operations.
 
 ````jsx
-import { Modal, Button, WhiteSpace, WingBlank } from 'antd-mobile';
+import { Modal, Button, WhiteSpace, WingBlank } from 'antd-mobile-rui';
 
 const operation = Modal.operation;
 

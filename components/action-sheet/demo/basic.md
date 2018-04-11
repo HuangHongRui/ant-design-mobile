@@ -7,7 +7,7 @@ title:
 
 
 ````jsx
-import { ActionSheet, WingBlank, WhiteSpace, Button, Toast } from 'antd-mobile';
+import { ActionSheet, WingBlank, WhiteSpace, Button, Toast } from 'antd-mobile-rui';
 
 // fix touch to scroll background page on iOS
 // https://github.com/ant-design/ant-design-mobile/issues/307

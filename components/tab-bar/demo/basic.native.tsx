@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { TabBar, SearchBar } from 'antd-mobile';
+import { TabBar, SearchBar } from 'antd-mobile-rui';
 
 export default class BasicTabBarExample extends React.Component<any, any> {
   constructor(props: any) {

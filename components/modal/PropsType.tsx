@@ -27,7 +27,7 @@ export type Callback = (valueOrLogin: string, password?: string) => void;
 export type CallbackOrActions = Callback | Action[];
 export abstract class ModalComponent<P, S> extends React.Component<P, S> {
   static alert: (
-    title: JSX.Element,
+    title: JSX.Element | string,
     message: JSX.Element,
     actions?: Action[],
     platform?: string,

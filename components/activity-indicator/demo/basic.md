@@ -8,7 +8,7 @@ title:
 Basic usage
 
 ````jsx
-import { ActivityIndicator, WingBlank, WhiteSpace, Button } from 'antd-mobile';
+import { ActivityIndicator, WingBlank, WhiteSpace, Button } from 'antd-mobile-rui';
 
 class App extends React.Component {
   constructor(props) {

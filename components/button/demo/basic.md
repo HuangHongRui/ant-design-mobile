@@ -8,7 +8,7 @@ title:
 button
 
 ````jsx
-import { Button, WhiteSpace, WingBlank } from 'antd-mobile';
+import { Button, WhiteSpace, WingBlank } from 'antd-mobile-rui';
 
 const ButtonExample = () => (
   <WingBlank>

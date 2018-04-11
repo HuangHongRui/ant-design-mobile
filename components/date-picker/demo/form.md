@@ -16,7 +16,7 @@ Examples for `DatePicker`, ([rc-form](https://github.com/react-component/form))
 
 ````jsx
 
-import { DatePicker, List, Button, InputItem } from 'antd-mobile';
+import { DatePicker, List, Button, InputItem } from 'antd-mobile-rui';
 import { createForm } from 'rc-form';
 
 const nowTimeStamp = Date.now();

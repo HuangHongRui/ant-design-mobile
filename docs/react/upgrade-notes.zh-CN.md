@@ -29,7 +29,7 @@ title: 升级指南
 2. 对于 `<Icon type={require('../foo.svg')} />` 此类使用本地 svg 文件的场景，可以保留原 svg-sprite-loader 相关配置不变，然后使用自定义的 `CustomIcon` 组件替换 antd-mobile `Icon`，示例如下：
 
 ```diff
-- import { Icon } from 'antd-mobile';
+- import { Icon } from 'antd-mobile-rui';
 - <Icon type={require('./foo.svg')} />
 
 + const CustomIcon = ({ type, className = '', size = 'md', ...restProps }) => (
@@ -145,8 +145,8 @@ const tabs = [
 升级示例:
 
   ```diff
-  - import { ListView, RefreshControl } from 'antd-mobile';
-  + import { ListView, PullToRefresh } from 'antd-mobile';
+  - import { ListView, RefreshControl } from 'antd-mobile-rui';
+  + import { ListView, PullToRefresh } from 'antd-mobile-rui';
   <ListView
      dataSource={this.state.dataSource}
   -  refreshControl={

@@ -6,7 +6,7 @@ title:
 ---
 
 ````jsx
-import { NavBar, Icon } from 'antd-mobile';
+import { NavBar, Icon } from 'antd-mobile-rui';
 
 ReactDOM.render(
   <div>

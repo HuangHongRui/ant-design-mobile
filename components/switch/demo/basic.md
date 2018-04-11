@@ -8,7 +8,7 @@ title:
 Switch. ([rc-form document](https://github.com/react-component/form))
 
 ````jsx
-import { List, Switch } from 'antd-mobile';
+import { List, Switch } from 'antd-mobile-rui';
 import { createForm } from 'rc-form';
 
 let SwitchExample = (props) => {

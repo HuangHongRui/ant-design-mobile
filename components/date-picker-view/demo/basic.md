@@ -6,7 +6,7 @@ title:
 ---
 
 ````jsx
-import { DatePickerView } from 'antd-mobile';
+import { DatePickerView } from 'antd-mobile-rui';
 import enUs from 'antd-mobile/lib/date-picker-view/locale/en_US';
 
 class DatePickerViewExample extends React.Component {

@@ -5,13 +5,15 @@ export interface CardPropsType {
 }
 
 export interface CardHeaderPropsType {
-  title?: JSX.Element;
+  // Company Pro
+  title?: JSX.Element | string;
   /** need url of img, if this is string. */
   thumb?: React.ReactNode;
   extra?: JSX.Element;
 }
 
 export interface CardFooterPropsType {
-  content?: JSX.Element;
+  // Company Pro
+  content?: JSX.Element | React.ReactNode;
   extra?: JSX.Element;
 }

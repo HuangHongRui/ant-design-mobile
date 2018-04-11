@@ -6,7 +6,7 @@ title:
 ---
 
 ````jsx
-import { Grid } from 'antd-mobile';
+import { Grid } from 'antd-mobile-rui';
 
 const data = Array.from(new Array(9)).map((_val, i) => ({
   icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',

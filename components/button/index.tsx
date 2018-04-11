@@ -13,7 +13,7 @@ export interface ButtonProps extends ButtonPropsType {
   activeClassName?: string;
   activeStyle?: boolean | CSSProperties;
   style?: React.CSSProperties;
-  onClick?: MouseEventHandler<HTMLAnchorElement>;
+  onClick?: MouseEventHandler<HTMLAnchorElement> | Function;
 }
 
 const rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
@@ -115,7 +115,7 @@ class Button extends React.Component<ButtonProps, any> {
           role="button"
           className={wrapCls}
           {...restProps}
-          onClick={disabled ? undefined : onClick}
+          onClick={disabled ? undefined : onClick as any}
           aria-disabled={disabled}
         >
           {iconEl}

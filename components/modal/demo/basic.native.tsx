@@ -1,5 +1,5 @@
 /* tslint:disable:no-console */
-import { Button, Modal, WhiteSpace, WingBlank } from 'antd-mobile';
+import { Button, Modal, WhiteSpace, WingBlank } from 'antd-mobile-rui';
 import React from 'react';
 import { Text, View } from 'react-native';
 

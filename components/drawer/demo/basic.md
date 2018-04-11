@@ -15,7 +15,7 @@ Overlayer mode
 
 
 ````jsx
-import { Drawer, List, NavBar, Icon } from 'antd-mobile';
+import { Drawer, List, NavBar, Icon } from 'antd-mobile-rui';
 
 class App1 extends React.Component {
   state = {

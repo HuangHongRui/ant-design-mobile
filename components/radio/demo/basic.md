@@ -7,7 +7,7 @@ title:
 
 
 ````jsx
-import { List, Radio, Flex, WhiteSpace } from 'antd-mobile';
+import { List, Radio, Flex, WhiteSpace } from 'antd-mobile-rui';
 
 const RadioItem = Radio.RadioItem;
 

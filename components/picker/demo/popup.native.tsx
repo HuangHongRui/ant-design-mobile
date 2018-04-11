@@ -1,4 +1,4 @@
-import { List, Picker } from 'antd-mobile';
+import { List, Picker } from 'antd-mobile-rui';
 import React from 'react';
 import { View } from 'react-native';
 

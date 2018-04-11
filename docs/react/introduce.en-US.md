@@ -94,7 +94,7 @@ Entry html page settings:
 Example of usage:
 
 ```jsx
-import { Button } from 'antd-mobile';
+import { Button } from 'antd-mobile-rui';
 ReactDOM.render(<Button>Start</Button>, mountNode);
 ```
 
@@ -125,7 +125,7 @@ The following two ways used to load the **only components you used**, select one
 
    ```jsx
    // import js and css modularly, parsed by babel-plugin-import
-   import { DatePicker } from 'antd-mobile';
+   import { DatePicker } from 'antd-mobile-rui';
    ```
 
 - Manually import
@@ -180,9 +180,9 @@ The following two ways used to load the **only components you used**, select one
    Then just change the way of import modules from antd-mobile.
 
    ```jsx
-   import { Button } from 'antd-mobile';
+   import { Button } from 'antd-mobile-rui';
    ```
-   
+
    > Note: Some people reflected that it would be [unable to resolve module `react-dom`](https://github.com/ant-design/ant-design-mobile/issues/2054) in a project created with `react-native init`. If you encounter the same problem, you might try to install [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver).
 
 - Manually import

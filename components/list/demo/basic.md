@@ -7,7 +7,7 @@ title:
 
 
 ````jsx
-import { List } from 'antd-mobile';
+import { List } from 'antd-mobile-rui';
 
 const Item = List.Item;
 const Brief = Item.Brief;

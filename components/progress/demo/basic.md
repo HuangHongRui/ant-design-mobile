@@ -14,7 +14,7 @@ title:
 Basic demo of Progress.
 
 ````jsx
-import { Progress, Button, WingBlank, WhiteSpace } from 'antd-mobile';
+import { Progress, Button, WingBlank, WhiteSpace } from 'antd-mobile-rui';
 
 class MyProgress extends React.Component {
   state = {

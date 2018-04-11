@@ -7,7 +7,7 @@ title:
 
 
 ````jsx
-import { SwipeAction, List } from 'antd-mobile';
+import { SwipeAction, List } from 'antd-mobile-rui';
 
 const SwipeActionExample = () => (
   <List>

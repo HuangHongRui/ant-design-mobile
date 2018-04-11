@@ -15,7 +15,7 @@ Basic use of Flex
 
 
 ````jsx
-import { Flex, WhiteSpace } from 'antd-mobile';
+import { Flex, WhiteSpace } from 'antd-mobile-rui';
 
 const PlaceHolder = ({ className = '', ...restProps }) => (
   <div className={`${className} placeholder`} {...restProps}>Block</div>

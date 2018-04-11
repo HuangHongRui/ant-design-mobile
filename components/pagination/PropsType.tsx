@@ -3,12 +3,16 @@ export interface PaginationPropsType {
   simple?: boolean;
   current: number;
   total: number;
-  prevText?: string;
-  nextText?: string;
+  // Company Pro
+  locale: {
+    prevText?: string | React.ReactNode;
+    nextText?: string | React.ReactNode;
+  };
   onPrev?: () => void;
   onNext?: () => void;
   onChange?: (current: number) => void;
 }
+
 export interface PaginationState {
   current: number;
 }

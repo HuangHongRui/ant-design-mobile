@@ -9,7 +9,7 @@ Basic Usage.
 
 
 ````jsx
-import { Tabs, WhiteSpace, Badge } from 'antd-mobile';
+import { Tabs, WhiteSpace, Badge } from 'antd-mobile-rui';
 
 const tabs = [
   { title: <Badge text={'3'}>First Tab</Badge> },

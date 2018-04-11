@@ -14,7 +14,7 @@ title:
 Recommended use of [rc-form ](https://github.com/react-component/form) for controlled component.
 
 ````jsx
-import { List, InputItem } from 'antd-mobile';
+import { List, InputItem } from 'antd-mobile-rui';
 import { createForm } from 'rc-form';
 
 class H5NumberInputExample extends React.Component {

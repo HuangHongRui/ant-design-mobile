@@ -6,7 +6,7 @@ title:
 ---
 
 ````jsx
-import { SearchBar, Button, WhiteSpace, WingBlank } from 'antd-mobile';
+import { SearchBar, Button, WhiteSpace, WingBlank } from 'antd-mobile-rui';
 
 class SearchBarExample extends React.Component {
   state = {

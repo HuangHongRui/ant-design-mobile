@@ -14,7 +14,7 @@ Tag 分为两种类型：`selectable` / `readonly`, 后者是无交互的，尺�
 There are two kinds of Tag, selectable and readonly type, the latter is a smaller tag without interactive behavior, which is typically used for display content.
 
 ````jsx
-import { Tag } from 'antd-mobile';
+import { Tag } from 'antd-mobile-rui';
 
 function onChange(selected) {
   console.log(`tag selected: ${selected}`);

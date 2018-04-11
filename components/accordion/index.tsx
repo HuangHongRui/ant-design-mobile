@@ -11,7 +11,7 @@ export interface AccordionProps extends AccordionPropsTypes {
 }
 
 export default class Accordion extends React.Component<AccordionProps, any> {
-  static Panel = Panel;
+  static Panel = Panel !== undefined ? Panel : <div>123</div>;
 
   static defaultProps = {
     prefixCls: 'am-accordion',

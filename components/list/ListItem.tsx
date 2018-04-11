@@ -12,7 +12,8 @@ export interface ListItemProps extends ListItemBasePropsType {
   className?: string;
   role?: string;
   style?: React.CSSProperties;
-  onClick?: MouseEventHandler<HTMLDivElement>;
+  // Company Pro | Function
+  onClick?: MouseEventHandler<HTMLDivElement> | any;
 }
 
 export interface BriefProps extends BriefBasePropsType {

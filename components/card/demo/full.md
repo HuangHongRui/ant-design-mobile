@@ -15,7 +15,7 @@ Card 通栏样式
 Full Column Card
 
 ````jsx
-import { Card, WhiteSpace } from 'antd-mobile';
+import { Card, WhiteSpace } from 'antd-mobile-rui';
 
 ReactDOM.render(
   <div>

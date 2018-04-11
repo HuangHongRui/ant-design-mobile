@@ -8,7 +8,7 @@ title:
 Form Collection. (Use [rc-form](https://github.com/react-component/form) to validate form fields)
 
 ````jsx
-import { List, InputItem, Switch, Stepper, Range, Button } from 'antd-mobile';
+import { List, InputItem, Switch, Stepper, Range, Button } from 'antd-mobile-rui';
 import { createForm } from 'rc-form';
 
 const Item = List.Item;

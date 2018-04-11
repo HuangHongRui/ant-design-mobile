@@ -14,7 +14,7 @@ title:
 Basic Pagination
 
 ````jsx
-import { Pagination, Icon } from 'antd-mobile';
+import { Pagination, Icon } from 'antd-mobile-rui';
 
 const locale = {
   prevText: 'Prev',

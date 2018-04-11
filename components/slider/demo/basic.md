@@ -9,7 +9,7 @@ Basic slider. When `disabled` is `true`, the slider will not be interactable
 
 ````jsx
 /* eslint arrow-body-style: 0 */
-import { Slider, WingBlank, WhiteSpace } from 'antd-mobile';
+import { Slider, WingBlank, WhiteSpace } from 'antd-mobile-rui';
 
 class App extends React.Component {
   log = (name) => {

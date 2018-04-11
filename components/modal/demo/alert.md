@@ -14,7 +14,7 @@ title:
 Including situations like no button, confirm button and multiple buttons.
 
 ```jsx
-import { Modal, Button, WhiteSpace, WingBlank, Toast } from 'antd-mobile';
+import { Modal, Button, WhiteSpace, WingBlank, Toast } from 'antd-mobile-rui';
 
 const alert = Modal.alert;
 

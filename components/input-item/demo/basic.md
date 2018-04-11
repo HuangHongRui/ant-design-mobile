@@ -14,7 +14,7 @@ title:
 Recommended use of [rc-form ](https://github.com/react-component/form) for controlled component.
 
 ````jsx
-import { List, InputItem, WhiteSpace } from 'antd-mobile';
+import { List, InputItem, WhiteSpace } from 'antd-mobile-rui';
 import { createForm } from 'rc-form';
 
 class BasicInputExample extends React.Component {

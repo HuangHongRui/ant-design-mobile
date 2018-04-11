@@ -7,7 +7,7 @@ title:
 
 
 ````jsx
-import { Icon, Grid } from 'antd-mobile';
+import { Icon, Grid } from 'antd-mobile-rui';
 
 const list = [
   'check-circle', 'check', 'check-circle-o',

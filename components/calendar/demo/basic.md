@@ -7,7 +7,7 @@ title:
 
 ````jsx
 
-import { List, Switch, Calendar } from 'antd-mobile';
+import { List, Switch, Calendar } from 'antd-mobile-rui';
 import enUS from 'antd-mobile/lib/calendar/locale/en_US';
 import zhCN from 'antd-mobile/lib/calendar/locale/zh_CN';
 

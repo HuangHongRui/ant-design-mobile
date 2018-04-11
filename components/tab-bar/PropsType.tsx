@@ -19,7 +19,8 @@ export interface TabBarItemProps {
   selected?: boolean;
   icon?: TabIcon;
   selectedIcon?: TabIcon;
-  title: string;
+  // Company Pro
+  title: string | React.ReactNode;
   /*web only*/
   dot?: boolean;
   /*web only*/

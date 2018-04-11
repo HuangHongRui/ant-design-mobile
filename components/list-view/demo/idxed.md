@@ -11,7 +11,7 @@ sticky index List
 ````jsx
 import { province } from 'antd-mobile-demo-data';
 import { StickyContainer, Sticky } from 'react-sticky';
-import { ListView, List, SearchBar } from 'antd-mobile';
+import { ListView, List, SearchBar } from 'antd-mobile-rui';
 
 const { Item } = List;
 

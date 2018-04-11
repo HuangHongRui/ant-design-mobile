@@ -9,7 +9,7 @@ title:
 
 ````jsx
 /* eslint no-dupe-keys: 0, no-mixed-operators: 0 */
-import { ListView } from 'antd-mobile';
+import { ListView } from 'antd-mobile-rui';
 
 function MyBody(props) {
   return (

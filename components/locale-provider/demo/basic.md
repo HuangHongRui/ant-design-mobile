@@ -11,7 +11,7 @@ Wrap your app with `LocaleProvider`, and apply the corresponding language packag
 import {
   Pagination, LocaleProvider, List, DatePicker, WhiteSpace, InputItem, WingBlank,
   SegmentedControl, Picker, SearchBar,
-} from 'antd-mobile';
+} from 'antd-mobile-rui';
 import enUS from 'antd-mobile/lib/locale-provider/en_US';
 
 const maxDate = new Date(2018, 11, 3, 22, 0);

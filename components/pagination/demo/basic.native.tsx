@@ -1,4 +1,4 @@
-import { Pagination, WhiteSpace, WingBlank } from 'antd-mobile';
+import { Pagination, WhiteSpace, WingBlank } from 'antd-mobile-rui';
 import React from 'react';
 
 const locale = {

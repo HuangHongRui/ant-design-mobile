@@ -27,7 +27,7 @@ How to upgrade, depend on which case you use:
 2. If you previously use your local svg file to do custom Icon like this way：`<Icon type={require('../foo.svg')} />`. Suggest you follow below solution:
 
 ```diff
-- import { Icon } from 'antd-mobile';
+- import { Icon } from 'antd-mobile-rui';
 - <Icon type={require('./foo.svg')} />
 
 + const CustomIcon = ({ type, className = '', size = 'md', ...restProps }) => (
@@ -145,8 +145,8 @@ Now `useZscroller` `scrollerOptions` `refreshControl` these props no longer work
 Upgrade example:
 
   ```diff
-  - import { ListView, RefreshControl } from 'antd-mobile';
-  + import { ListView, PullToRefresh } from 'antd-mobile';
+  - import { ListView, RefreshControl } from 'antd-mobile-rui';
+  + import { ListView, PullToRefresh } from 'antd-mobile-rui';
   <ListView
      dataSource={this.state.dataSource}
   -  refreshControl={<RefreshControl

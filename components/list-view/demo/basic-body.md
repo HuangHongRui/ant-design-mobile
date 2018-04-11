@@ -9,7 +9,7 @@ use html `body` as a scroll container.
 
 ````jsx
 /* eslint no-dupe-keys: 0 */
-import { ListView } from 'antd-mobile';
+import { ListView } from 'antd-mobile-rui';
 
 const data = [
   {

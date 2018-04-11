@@ -6,7 +6,7 @@ title:
 ---
 
 ````jsx
-import { SegmentedControl, WingBlank } from 'antd-mobile';
+import { SegmentedControl, WingBlank } from 'antd-mobile-rui';
 
 class SegmentedControlExample extends React.Component {
   onChange = (e) => {

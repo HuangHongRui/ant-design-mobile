@@ -1,7 +1,8 @@
 import React from 'react';
 
 export interface DatePickerPropsType {
-  value?: Date;
+  // Company Pro
+  value?: Date | null;
   mode?: 'datetime' | 'date' | 'year' | 'month' | 'time';
   minDate?: Date;
   maxDate?: Date;

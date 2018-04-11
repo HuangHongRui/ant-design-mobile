@@ -72,7 +72,7 @@ npm install babel-plugin-import --save-dev
 
 ```diff
 - import Button from 'antd-mobile/lib/button';
-+ import { Button } from 'antd-mobile';
++ import { Button } from 'antd-mobile-rui';
 ```
 
 ### 完整的示例

@@ -7,7 +7,7 @@ title:
 
 
 ````jsx
-import { PullToRefresh, Button } from 'antd-mobile';
+import { PullToRefresh, Button } from 'antd-mobile-rui';
 
 function genData() {
   const dataArr = [];

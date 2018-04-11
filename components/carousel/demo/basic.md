@@ -10,7 +10,7 @@ When using `Carousel` in web projects, you may have problem about how to deal wi
 > [issues/1002](https://github.com/ant-design/ant-design-mobile/issues/1002#issuecomment-287301262)、[nuka-carousel/issues/103](https://github.com/FormidableLabs/nuka-carousel/issues/103)
 
 ````jsx
-import { Carousel, WhiteSpace, WingBlank } from 'antd-mobile';
+import { Carousel, WhiteSpace, WingBlank } from 'antd-mobile-rui';
 
 class App extends React.Component {
   state = {

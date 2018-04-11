@@ -7,7 +7,7 @@ import {
   Picker,
   SearchBar,
   WhiteSpace,
-} from 'antd-mobile';
+} from 'antd-mobile-rui';
 import React from 'react';
 import { View } from 'react-native';
 import enUS from '../en_US';

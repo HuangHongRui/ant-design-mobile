@@ -7,7 +7,7 @@ title:
 
 
 ````jsx
-import { Toast, WhiteSpace, WingBlank, Button } from 'antd-mobile';
+import { Toast, WhiteSpace, WingBlank, Button } from 'antd-mobile-rui';
 
 function showToast() {
   Toast.info('This is a toast tips !!!', 1);

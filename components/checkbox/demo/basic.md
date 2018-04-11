@@ -7,7 +7,7 @@ title:
 
 
 ````jsx
-import { List, Checkbox, Flex } from 'antd-mobile';
+import { List, Checkbox, Flex } from 'antd-mobile-rui';
 
 const CheckboxItem = Checkbox.CheckboxItem;
 const AgreeItem = Checkbox.AgreeItem;

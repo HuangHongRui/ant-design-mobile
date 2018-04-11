@@ -6,7 +6,7 @@ title:
 ---
 
 ````jsx
-import { Result, Icon, WhiteSpace } from 'antd-mobile';
+import { Result, Icon, WhiteSpace } from 'antd-mobile-rui';
 
 const myImg = src => <img src={src} className="spe am-icon am-icon-md" alt="" />;
 

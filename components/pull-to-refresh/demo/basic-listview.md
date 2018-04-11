@@ -8,7 +8,7 @@ title:
 
 ````jsx
 /* eslint no-dupe-keys: 0, no-mixed-operators: 0 */
-import { PullToRefresh, ListView, Button } from 'antd-mobile';
+import { PullToRefresh, ListView, Button } from 'antd-mobile-rui';
 
 const data = [
   {

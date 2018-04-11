@@ -10,7 +10,7 @@ Silder with range. When `disabled` is `true`, the slider will not be interactabl
 
 ````jsx
 /* eslint arrow-body-style: 0 */
-import { Range, WingBlank, WhiteSpace } from 'antd-mobile';
+import { Range, WingBlank, WhiteSpace } from 'antd-mobile-rui';
 
 const App = () => {
   const log = (name) => {

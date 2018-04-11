@@ -8,7 +8,7 @@ title:
 Accordion
 
 ````jsx
-import { Accordion, List } from 'antd-mobile';
+import { Accordion, List } from 'antd-mobile-rui';
 
 class AccordionExmple extends React.Component {
   onChange = (key) => {

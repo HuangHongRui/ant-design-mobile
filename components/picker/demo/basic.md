@@ -8,7 +8,7 @@ title:
 数据级联选择示例. ([rc-form 文档](https://github.com/react-component/form))
 
 ````jsx
-import { Picker, List, WhiteSpace } from 'antd-mobile';
+import { Picker, List, WhiteSpace } from 'antd-mobile-rui';
 import { createForm } from 'rc-form';
 import arrayTreeFilter from 'array-tree-filter';
 

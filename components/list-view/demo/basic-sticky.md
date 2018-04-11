@@ -9,7 +9,7 @@ sticky block header to the top of the page
 
 ````jsx
 /* eslint no-dupe-keys: 0 */
-import { ListView } from 'antd-mobile';
+import { ListView } from 'antd-mobile-rui';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 const data = [

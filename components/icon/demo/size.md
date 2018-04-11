@@ -6,7 +6,7 @@ title:
 ---
 
 ````jsx
-import { Icon, Grid } from 'antd-mobile';
+import { Icon, Grid } from 'antd-mobile-rui';
 
 const Demo = () => {
   const size = ['xxs', 'xs', 'sm', 'md', 'lg'];

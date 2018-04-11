@@ -71,7 +71,8 @@ class AntTabBar extends React.Component<AntTabbarProps, any> {
           selected={cProps.selected}
           icon={cProps.icon}
           selectedIcon={cProps.selectedIcon}
-          title={cProps.title}
+          // Company Pro
+          title={cProps.title as any}
           tintColor={tintColor}
           unselectedTintColor={unselectedTintColor}
           dataAttrs={getDataAttr(cProps)}

@@ -1,4 +1,4 @@
-declare module 'antd-mobile';
+declare module 'antd-mobile-rui';
 
 declare module 'antd-mobile-demo-data';
 

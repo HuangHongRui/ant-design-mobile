@@ -8,7 +8,7 @@ title:
 use react-sticky
 
 ````jsx
-import { Tabs, WhiteSpace } from 'antd-mobile';
+import { Tabs, WhiteSpace } from 'antd-mobile-rui';
 
 const tabs = [
   { title: '1 Tab' },

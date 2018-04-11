@@ -8,7 +8,7 @@ title:
 固定外部容器高度
 
 ````jsx
-import { Tabs, WhiteSpace } from 'antd-mobile';
+import { Tabs, WhiteSpace } from 'antd-mobile-rui';
 
 const tabs = [
   { title: 'First Tab' },

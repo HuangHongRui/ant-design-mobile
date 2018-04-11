@@ -6,7 +6,7 @@ title:
 ---
 
 ````jsx
-import { List, Stepper } from 'antd-mobile';
+import { List, Stepper } from 'antd-mobile-rui';
 
 class Demo extends React.Component {
   constructor(props) {

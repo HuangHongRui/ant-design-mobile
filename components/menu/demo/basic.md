@@ -7,7 +7,7 @@ title:
 
 ````jsx
 /* eslint no-nested-ternary:0 */
-import { Menu, ActivityIndicator, NavBar } from 'antd-mobile';
+import { Menu, ActivityIndicator, NavBar } from 'antd-mobile-rui';
 
 const data = [
   {

@@ -14,7 +14,7 @@ title:
 Used for the content of the page block, control large content of a small range grouping and hidden, plays a role in keeping the interface clean and tidy.
 
 ````jsx
-import { TabBar } from 'antd-mobile';
+import { TabBar } from 'antd-mobile-rui';
 
 class TabBarExample extends React.Component {
   constructor(props) {

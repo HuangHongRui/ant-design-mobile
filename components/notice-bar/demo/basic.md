@@ -7,7 +7,7 @@ title:
 
 
 ````jsx
-import { NoticeBar, WhiteSpace, Icon } from 'antd-mobile';
+import { NoticeBar, WhiteSpace, Icon } from 'antd-mobile-rui';
 
 const NoticeBarExample = () => (
   <div>

@@ -14,7 +14,7 @@ title:
 Basic Modal.
 
 ````jsx
-import { Modal, List, Button, WhiteSpace, WingBlank } from 'antd-mobile';
+import { Modal, List, Button, WhiteSpace, WingBlank } from 'antd-mobile-rui';
 
 function closest(el, selector) {
   const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;

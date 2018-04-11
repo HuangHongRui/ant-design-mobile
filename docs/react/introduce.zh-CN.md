@@ -94,7 +94,7 @@ $ npm install antd-mobile --save
 组件使用实例：
 
 ```jsx
-import { Button } from 'antd-mobile';
+import { Button } from 'antd-mobile-rui';
 ReactDOM.render(<Button>Start</Button>, mountNode);
 ```
 
@@ -125,7 +125,7 @@ import 'antd-mobile/dist/antd-mobile.css';  // or 'antd-mobile/dist/antd-mobile.
 
    ```jsx
    // babel-plugin-import 会帮助你加载 JS 和 CSS
-   import { DatePicker } from 'antd-mobile';
+   import { DatePicker } from 'antd-mobile-rui';
    ```
 
 - 手动引入
@@ -180,9 +180,9 @@ AppRegistry.registerComponent('HelloWorldApp', () => HelloWorldApp);
    然后改变从 antd-mobile 引入模块方式即可。
 
    ```jsx
-   import { Button } from 'antd-mobile';
-   ``` 
-   
+   import { Button } from 'antd-mobile-rui';
+   ```
+
    > 说明：有人反映通过 `react-native init` 创建的项目在使用时可能会报 [Unable to resolve module `react-dom`](https://github.com/ant-design/ant-design-mobile/issues/2054) 的错误 ，此时不妨安装 [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver) 试试~
 
 - 手动引入
