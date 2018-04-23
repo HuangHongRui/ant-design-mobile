@@ -2,7 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 // import { renderToJson } from 'enzyme-to-json';
 
-import { district } from 'antd-mobile-demo-data';
+import { district } from 'antd-mobile-rui-demo-data';
 import Picker from '../index';
 import List from '../../list/index';
 

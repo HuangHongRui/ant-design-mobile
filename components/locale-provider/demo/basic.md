@@ -12,7 +12,7 @@ import {
   Pagination, LocaleProvider, List, DatePicker, WhiteSpace, InputItem, WingBlank,
   SegmentedControl, Picker, SearchBar,
 } from 'antd-mobile-rui';
-import enUS from 'antd-mobile/lib/locale-provider/en_US';
+import enUS from '../en_US';
 
 const maxDate = new Date(2018, 11, 3, 22, 0);
 const minDate = new Date(2015, 7, 6, 8, 30);

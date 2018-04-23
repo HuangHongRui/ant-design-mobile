@@ -7,7 +7,7 @@ Ant Design Mobile allows to customize some basic design aspects in order to meet
 
 ![](https://gw.alipayobjects.com/zos/rmsportal/bvJhBmAfTWsUixLpGLbL.png)
 
-> This doc only introduce how to customize theme in web project, if you want to know how to do this for react-native components, please see [customize theme and style for react-native components](https://github.com/ant-design/antd-mobile-samples/tree/master/rn-custom-ui#antd-mobile-with-rn-custom-ui)
+> This doc only introduce how to customize theme in web project, if you want to know how to do this for react-native components, please see [customize theme and style for react-native components](https://github.com/ant-design/antd-mobile-rui-samples/tree/master/rn-custom-ui#antd-mobile-rui-with-rn-custom-ui)
 
 ## Less variables
 
@@ -30,13 +30,13 @@ we can use the way of [modifyVars](http://lesscss.org/usage/#using-less-in-the-b
 ```bash
   npm install --save-dev babel-plugin-import less less-loader
 ```
-- Secondly, configuration babel-plugin-import to load antd-mobile less
+- Secondly, configuration babel-plugin-import to load antd-mobile-rui less
 
 ```js
 {
     ...
     "plugins": [
-        ["import", {"libraryName": "antd-mobile", "style": true}],
+        ["import", {"libraryName": "antd-mobile-rui", "style": true}],
         ...
     ]
 }
@@ -92,7 +92,7 @@ module.exports = {
 }
 ```
 
-Besides，**[antd-mobile@1 viewport setting](https://github.com/ant-design/ant-design-mobile/wiki/HD) is no longer requirement in antd-mobile2.0**，If you still want to use viewport scale，you need set theme varaiable `hd` to `2px`.
+Besides，**[antd-mobile-rui@1 viewport setting](https://github.com/ant-design/ant-design-mobile/wiki/HD) is no longer requirement in antd-mobile-rui2.0**，If you still want to use viewport scale，you need set theme varaiable `hd` to `2px`.
 
 ```js
 {
@@ -114,7 +114,7 @@ Use less files for variable coverage.
 To establish a separate ` less ` files as follows, to introduce the file again.
 
 ```css
-@import "~antd-mobile/dist/antd-mobile.less";   // Introduce the official less style entry file
+@import "~antd-mobile-rui/dist/antd-mobile-rui.less";   // Introduce the official less style entry file
 @import "your-theme-file.less";   // Used to override the variables defined above
 ```
 

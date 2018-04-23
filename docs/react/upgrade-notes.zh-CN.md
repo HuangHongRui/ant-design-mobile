@@ -7,26 +7,26 @@ title: 升级指南
 
 ## 1.x => 2.0
 
-2.0 不兼容改动，升级实例 [antd-mobile-samples / web-1.x-2.0](https://github.com/ant-design/antd-mobile-samples/tree/master/web-1.x-2.0)
+2.0 不兼容改动，升级实例 [antd-mobile-rui-samples / web-1.x-2.0](https://github.com/ant-design/antd-mobile-rui-samples/tree/master/web-1.x-2.0)
 
 #### 高清方案
 
-> 如果没有使用 `antd-mobile@1.x` 或者类似的 viewport 缩放方案则可以跳过这一步。
+> 如果没有使用 `antd-mobile-rui@1.x` 或者类似的 viewport 缩放方案则可以跳过这一步。
 
 如何升级？
 
 1. 确保在页面的 html 标签上添加 `data-scale` 属性， 如 `<html data-scale="true"></html>`, 或者通过脚本动态添加 `document.documentElement.setAttribute('data-scale', true);`。
 
-2. 参照 [自定义主题文档](https://mobile.ant.design/docs/react/customize-theme-cn) 将 antd-mobile 提供的主题变量 `@hd` 赋值为 `2px`。
+2. 参照 [自定义主题文档](https://mobile.ant.design/docs/react/customize-theme-cn) 将 antd-mobile-rui 提供的主题变量 `@hd` 赋值为 `2px`。
 
 
 #### Icon
 
 如何升级，分如下两种情况？
 
-1. 对于 `<Icon type="loading" />` 此类使用 antd-mobile 内置 Icon 的场景，无需任何修改。
+1. 对于 `<Icon type="loading" />` 此类使用 antd-mobile-rui 内置 Icon 的场景，无需任何修改。
 
-2. 对于 `<Icon type={require('../foo.svg')} />` 此类使用本地 svg 文件的场景，可以保留原 svg-sprite-loader 相关配置不变，然后使用自定义的 `CustomIcon` 组件替换 antd-mobile `Icon`，示例如下：
+2. 对于 `<Icon type={require('../foo.svg')} />` 此类使用本地 svg 文件的场景，可以保留原 svg-sprite-loader 相关配置不变，然后使用自定义的 `CustomIcon` 组件替换 antd-mobile-rui `Icon`，示例如下：
 
 ```diff
 - import { Icon } from 'antd-mobile-rui';
@@ -182,7 +182,7 @@ const tabs = [
 
 ## 0.9.x => 1.0
 
-从 1.0 开始，`antd-mobile` 严格遵循 [Semantic Versioning 2.0.0](http://semver.org/lang/zh-CN/) 语义化版本规范。
+从 1.0 开始，`antd-mobile-rui` 严格遵循 [Semantic Versioning 2.0.0](http://semver.org/lang/zh-CN/) 语义化版本规范。
 
 重要变动如下：
 

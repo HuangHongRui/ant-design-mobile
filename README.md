@@ -9,10 +9,10 @@ English | [简体中文](./README.zh-CN.md)
 # Ant Design Mobile
 [![](https://img.shields.io/travis/ant-design/ant-design-mobile.svg?style=flat-square)](https://travis-ci.org/ant-design/ant-design-mobile)
 [![Codecov](https://img.shields.io/codecov/c/github/ant-design/ant-design-mobile.svg?style=flat-square)](https://codecov.io/gh/ant-design/ant-design-mobile)
-[![npm package](https://img.shields.io/npm/v/antd-mobile.svg?style=flat-square)](https://www.npmjs.org/package/antd-mobile)
-[![NPM downloads](http://img.shields.io/npm/dm/antd-mobile.svg?style=flat-square)](https://npmjs.org/package/antd-mobile)
+[![npm package](https://img.shields.io/npm/v/antd-mobile-rui.svg?style=flat-square)](https://www.npmjs.org/package/antd-mobile-rui)
+[![NPM downloads](http://img.shields.io/npm/dm/antd-mobile-rui.svg?style=flat-square)](https://npmjs.org/package/antd-mobile-rui)
 [![Dependency Status](https://david-dm.org/ant-design/ant-design-mobile.svg?style=flat-square)](https://david-dm.org/ant-design/ant-design-mobile)
-[![CDNJS](https://img.shields.io/cdnjs/v/antd-mobile.svg?style=flat-square)](https://cdnjs.com/libraries/antd-mobile)
+[![CDNJS](https://img.shields.io/cdnjs/v/antd-mobile-rui.svg?style=flat-square)](https://cdnjs.com/libraries/antd-mobile-rui)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/ant-design/ant-design-mobile.svg)](http://isitmaintained.com/project/ant-design/ant-design-mobile "Percentage of issues still open")
 [![Join the chat at https://gitter.im/ant-design/ant-design](https://img.shields.io/gitter/room/ant-design/ant-design.svg?style=flat-square)](https://gitter.im/ant-design/ant-design?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -55,7 +55,7 @@ install expo app: https://expo.io/tools
 - [Home Page](http://mobile.ant.design)
 - [Developer Instruction](http://github.com/ant-design/ant-design-mobile/blob/master/development.en-US.md)
 - [React components](http://github.com/react-component/)
-- [Demos](https://github.com/ant-design/antd-mobile-samples)
+- [Demos](https://github.com/ant-design/antd-mobile-rui-samples)
 
 ## Contributing
 

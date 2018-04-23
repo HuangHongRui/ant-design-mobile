@@ -175,7 +175,7 @@ export default class ComponentDoc extends React.Component {
                               <section className="code-box-demo code-box-demo-preview">
                                 <iframe id="demoFrame"
                                   name="demoFrame"
-                                  title="antd-mobile"
+                                  title="antd-mobile-rui"
                                   style={{
                                     width: '377Px',
                                     height: '548Px',

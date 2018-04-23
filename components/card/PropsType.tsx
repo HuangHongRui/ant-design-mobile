@@ -16,4 +16,6 @@ export interface CardFooterPropsType {
   // Company Pro
   content?: JSX.Element | React.ReactNode;
   extra?: JSX.Element;
+  // Company Pro
+  onClick?: Function;
 }

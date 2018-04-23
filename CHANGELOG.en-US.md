@@ -5,7 +5,7 @@ timeline: true
 toc: false
 ---
 
-`antd-mobile` strictly follows [Semantic Versioning 2.0.0](http://semver.org/).
+`antd-mobile-rui` strictly follows [Semantic Versioning 2.0.0](http://semver.org/).
 
 
 #### Release Schedule
@@ -522,8 +522,8 @@ Happy new year 2018 🎉
 `2017-06-03`
 
 - **Notice**
-  - antd-mobile `Icon` 所依赖的开源 webpack loader `svg-sprite-loader` 最近从 `0.3` 直接升级到了 `2.0`, 其配置方案发生了 break change，但由于此 loader 的版本由用户代码控制，而功能被 antd-mobile 和用户代码所共同依赖， antd-mobile 团队只能选择在 `2.0` 对其进行升级，请各位用户在 `antd-mobile@1.x` 期间暂时不要升级 `svg-sprite-loader`，在项目里仍然使用 `svg-sprite-loader@0.3.x` 即可。[#1283](https://github.com/ant-design/ant-design-mobile/issues/1283)
-  - 新增 warning，提醒用户 antd-mobile `2.0` 将会废弃 `Table`。[e1009015e](https://github.com/ant-design/ant-design-mobile/commit/e1009015e0c0740045995555831d1598a99c629f)
+  - antd-mobile-rui `Icon` 所依赖的开源 webpack loader `svg-sprite-loader` 最近从 `0.3` 直接升级到了 `2.0`, 其配置方案发生了 break change，但由于此 loader 的版本由用户代码控制，而功能被 antd-mobile-rui 和用户代码所共同依赖， antd-mobile-rui 团队只能选择在 `2.0` 对其进行升级，请各位用户在 `antd-mobile-rui@1.x` 期间暂时不要升级 `svg-sprite-loader`，在项目里仍然使用 `svg-sprite-loader@0.3.x` 即可。[#1283](https://github.com/ant-design/ant-design-mobile/issues/1283)
+  - 新增 warning，提醒用户 antd-mobile-rui `2.0` 将会废弃 `Table`。[e1009015e](https://github.com/ant-design/ant-design-mobile/commit/e1009015e0c0740045995555831d1598a99c629f)
 
 - **Feature**
   - 底层 Touch 事件库更新，所有 `onPress` 和 `onLongPress` 支持 `stopPropagation`。[e7400b699](https://github.com/ant-design/ant-design-mobile/commit/e7400b6994d3a9127bd1bd6fa418996ad8206f96)
@@ -716,7 +716,7 @@ Happy new year 2018 🎉
 - **Improve && Enhancement**
   - 新增 Web && React Native 组件的 snapshot 测试，覆盖率 59% ([#921](https://github.com/ant-design/ant-design-mobile/pull/921))
   - 文档翻译进度 ([#329](https://github.com/ant-design/ant-design-mobile/issues/329))
-  - [官方 Demo 集合](https://github.com/ant-design/antd-mobile-samples) 新增 roadhog 示例
+  - [官方 Demo 集合](https://github.com/ant-design/antd-mobile-rui-samples) 新增 roadhog 示例
 
 ## 1.0.4
 
@@ -759,7 +759,7 @@ Happy new year 2018 🎉
   - Icon 增加 try catch，避免控制台报错 ([#895](https://github.com/ant-design/ant-design-mobile/issues/895))
   - 官网重构支持国际化，自动检测浏览器语言并支持中/英文切换
   - 文档翻译进行中，欢迎参与贡献~ ([#329](https://github.com/ant-design/ant-design-mobile/issues/329))
-  - 官方 demo 更新 [antd-mobile-samples](https://github.com/ant-design/antd-mobile-samples)
+  - 官方 demo 更新 [antd-mobile-rui-samples](https://github.com/ant-design/antd-mobile-rui-samples)
 
 
 ## 1.0.1

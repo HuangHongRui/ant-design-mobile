@@ -19,25 +19,32 @@ export interface ModalPropsType {
 
 export interface Action {
   text: string;
-  onPress?: () => void | Promise<any>;
+  // Company Pro
+  onPress?: (e?: any) => void | Promise<any>;
   style?: React.CSSProperties | StyleProp<TextStyle> | string;
 }
 
-export type Callback = (valueOrLogin: string, password?: string) => void;
+// Company Pro
+export type Callback = (valueOrLogin: string, password?: string, phone?: string, remark?: string) => void;
 export type CallbackOrActions = Callback | Action[];
 export abstract class ModalComponent<P, S> extends React.Component<P, S> {
   static alert: (
+    // Company Pro
     title: JSX.Element | string,
-    message: JSX.Element,
+    // Company Pro
+    message: JSX.Element | string,
     actions?: Action[],
     platform?: string,
   ) => { close: () => void };
 
   static prompt: (
-    title: JSX.Element,
-    message: JSX.Element,
+    // Company Pro
+    title: JSX.Element | string,
+    // Company Pro
+    message: JSX.Element | string,
     callbackOrActions: CallbackOrActions,
-    type?: 'default' | 'secure-text' | 'login-password',
+    // Company Pro
+    type?: 'default' | 'secure-text' | 'login-password' | 'remark' | 'custom',
     defaultValue?: string,
     placeholders?: string[],
     platform?: string,

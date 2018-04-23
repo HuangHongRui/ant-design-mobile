@@ -97,13 +97,13 @@ export default class Demo extends React.Component {
     const { lang, sourceCode } = this.state;
     const { locale } = this.context.intl;
     const localizedTitle = meta.title[locale] || meta.title;
-    const prefillStyle = `@import 'antd-mobile@2/dist/antd-mobile.min.css';\n\n${style || ''}`.replace(new RegExp(`#${meta.id}\\s*`, 'g'), '');
+    const prefillStyle = `@import 'antd-mobile-rui@2/dist/antd-mobile-rui.min.css';\n\n${style || ''}`.replace(new RegExp(`#${meta.id}\\s*`, 'g'), '');
 
     const js = sourceCode
       .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'rc-form';/, 'const { $1 } = window["rc-form"];')
       .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'array-tree-filter';/, 'const { $1 } = window["arrayTreeFilter"];')
-      .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'antd-mobile-demo-data';/, 'const { $1 } = window["antd-mobile-demo-data"];')
-      .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'antd-mobile';/, 'const { $1 } = window["antd-mobile"];');
+      .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'antd-mobile-rui-demo-data';/, 'const { $1 } = window["antd-mobile-rui-demo-data"];')
+      .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'antd-mobile-rui';/, 'const { $1 } = window["antd-mobile-rui"];');
 
     const codepenPrefillConfig = {
       title: `${localizedTitle} - Ant Design Mobile Demo`,
@@ -114,14 +114,14 @@ export default class Demo extends React.Component {
       js,
       css: prefillStyle,
       editors: '001',
-      css_external: 'https://unpkg.com/antd-mobile@2/dist/antd-mobile.min.css',
+      css_external: 'https://unpkg.com/antd-mobile-rui@2/dist/antd-mobile-rui.min.css',
       js_external: [
         'react@16/umd/react.production.min.js',
         'react-dom@16/umd/react-dom.production.min.js',
         'rc-form@1/dist/rc-form.min.js',
-        'antd-mobile@2/dist/antd-mobile.min.js',
+        'antd-mobile-rui@2/dist/antd-mobile-rui.min.js',
         'array-tree-filter@2',
-        'antd-mobile-demo-data@0.2',
+        'antd-mobile-rui-demo-data@0.2',
       ]
         .map(url => `https://unpkg.com/${url}`)
         .concat(['https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js'])
@@ -130,8 +130,8 @@ export default class Demo extends React.Component {
     };
     const riddlePrefillConfig = {
       title: `${localizedTitle} - Ant Design Mobile Demo`,
-      js: sourceCode.replace('from \'antd-mobile\'', 'from \'antd-mobile\''),
-      css: prefillStyle.replace('\'antd-mobile/', '\'antd-mobile/'),
+      js: sourceCode.replace('from \'antd-mobile-rui\'', 'from \'antd-mobile-rui\''),
+      css: prefillStyle.replace('\'antd-mobile-rui/', '\'antd-mobile-rui/'),
     };
     return Array.isArray(highlightedCode) ? (
       <div className="highlight">

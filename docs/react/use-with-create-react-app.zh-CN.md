@@ -3,7 +3,7 @@ order: 1
 title: 在 create-react(-native)-app 中使用
 ---
 
-[create-react-app](https://github.com/facebookincubator/create-react-app) (Web 项目) / [create-react-native-app](https://github.com/react-community/create-react-native-app)(React Native 项目) 是业界最优秀的 React 相关应用开发工具之一，本文档尝试以此工具来使用 antd-mobile 组件。
+[create-react-app](https://github.com/facebookincubator/create-react-app) (Web 项目) / [create-react-native-app](https://github.com/react-community/create-react-native-app)(React Native 项目) 是业界最优秀的 React 相关应用开发工具之一，本文档尝试以此工具来使用 antd-mobile-rui 组件。
 
 ## Web 项目
 
@@ -21,7 +21,7 @@ $ npm start
 
 打开 http://localhost:3000/ 访问你的应用。
 
-### 引入 antd-mobile
+### 引入 antd-mobile-rui
 
 先参考 [入口页面 (html 或 模板) 相关设置](/docs/react/introduce#3.-%E4%BD%BF%E7%94%A8)，配置你的项目 html 页面。
 
@@ -63,7 +63,7 @@ npm install babel-plugin-import --save-dev
 ```diff
 + const { injectBabelPlugin } = require('react-app-rewired');
   module.exports = function override(config, env) {
-+   config = injectBabelPlugin(['import', { libraryName: 'antd-mobile', style: 'css' }], config);
++   config = injectBabelPlugin(['import', { libraryName: 'antd-mobile-rui', style: 'css' }], config);
     return config;
   };
 ```
@@ -71,17 +71,17 @@ npm install babel-plugin-import --save-dev
 - 更改引用方式
 
 ```diff
-- import Button from 'antd-mobile/lib/button';
+- import Button from 'antd-mobile-rui/lib/button';
 + import { Button } from 'antd-mobile-rui';
 ```
 
 ### 完整的示例
 
-含 `css-moules` 和 `自定义主题` 的 [antd-mobile-sample/create-react-app](https://github.com/ant-design/antd-mobile-samples/tree/master/create-react-app)
+含 `css-moules` 和 `自定义主题` 的 [antd-mobile-rui-sample/create-react-app](https://github.com/ant-design/antd-mobile-rui-samples/tree/master/create-react-app)
 
 
 ## React Native 项目
 
-完整步骤请查看此处文档： [antd-mobile-sample/create-react-native-app](https://github.com/ant-design/antd-mobile-samples/tree/master/create-react-native-app)
+完整步骤请查看此处文档： [antd-mobile-rui-sample/create-react-native-app](https://github.com/ant-design/antd-mobile-rui-samples/tree/master/create-react-native-app)
 
 > Note: 单个组件改写部分样式的方法可以参考 (1.x)： [ant-design-mobile/issues/1174](https://github.com/ant-design/ant-design-mobile/issues/1174#issuecomment-295256831)，(2.x): [ant-design-mobile/pull/1629](https://github.com/ant-design/ant-design-mobile/pull/1629)

@@ -23,6 +23,9 @@ export default class BasicInputItemExample extends React.Component<any, any> {
       password: '',
       number: '',
       focused: false,
+      // Company Pro
+      tel: '',
+      remark: '',
     };
   }
 

@@ -7,7 +7,7 @@ Here list some of main incompatible changes and recommended changes in the upgra
 
 ## 1.x => 2.0
 
-2.x Breaking changes upgrade sample [antd-mobile-samples / web-1.x-2.0](https://github.com/ant-design/antd-mobile-samples/tree/master/web-1.x-2.0)
+2.x Breaking changes upgrade sample [antd-mobile-rui-samples / web-1.x-2.0](https://github.com/ant-design/antd-mobile-rui-samples/tree/master/web-1.x-2.0)
 
 #### HD program
 
@@ -17,13 +17,13 @@ How to upgrade?
 
 1. make sure add a `data-scale` attibute in your `html` tag, eg: `<html data-scale="true"></html>`, or you can do it through js, eg: `document.documentElement.setAttribute('data-scale', true);`.
 
-2.Follow [Customize Theme Doc](https://mobile.ant.design/docs/react/customize-theme) to modify antd-mobile theme variable `@hd` to be `2px`.
+2.Follow [Customize Theme Doc](https://mobile.ant.design/docs/react/customize-theme) to modify antd-mobile-rui theme variable `@hd` to be `2px`.
 
 #### Icon
 
 How to upgrade, depend on which case you use:
 
-1. If you previously only use antd-mobile built-in Icon like this：`<Icon type="loading" />`, no need to do any change.
+1. If you previously only use antd-mobile-rui built-in Icon like this：`<Icon type="loading" />`, no need to do any change.
 2. If you previously use your local svg file to do custom Icon like this way：`<Icon type={require('../foo.svg')} />`. Suggest you follow below solution:
 
 ```diff
@@ -175,7 +175,7 @@ For more details, please see change logs.
 
 ## 0.9.x => 1.0
 
-After 1.0, `antd-mobile` strictly follows [Semantic Versioning 2.0.0](http://semver.org/).
+After 1.0, `antd-mobile-rui` strictly follows [Semantic Versioning 2.0.0](http://semver.org/).
 
 Significant changes are as follows:
 

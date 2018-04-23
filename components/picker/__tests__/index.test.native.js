@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 // import { shallow } from 'enzyme';
 
-import { district } from 'antd-mobile-demo-data';
+import { district } from 'antd-mobile-rui-demo-data';
 import Picker from '../index';
 import List from '../../list/index';
 

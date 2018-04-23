@@ -23,5 +23,5 @@ subtitle: 拉动刷新
 | onRefresh | 必选, 刷新回调函数 | () => void | - |
 | indicator  | 指示器配置 `{ activate: ReactNode, deactivate: ReactNode, release: ReactNode, finish: ReactNode }` | Object | - |
 
-如果页面使用了对 viewport 进行缩放的高清适配方案，请自行对 distanceToRefresh 进行调整, 例如对 antd-mobile@1.x 高清方案，可设置 `distanceToRefresh = window.devicePixelRatio * 25`
+如果页面使用了对 viewport 进行缩放的高清适配方案，请自行对 distanceToRefresh 进行调整, 例如对 antd-mobile-rui@1.x 高清方案，可设置 `distanceToRefresh = window.devicePixelRatio * 25`
 

@@ -8,8 +8,8 @@ title:
 ````jsx
 
 import { List, Switch, Calendar } from 'antd-mobile-rui';
-import enUS from 'antd-mobile/lib/calendar/locale/en_US';
-import zhCN from 'antd-mobile/lib/calendar/locale/zh_CN';
+import enUS from '../locale/en_US';
+import zhCN from '../locale/zh_CN';
 
 const extra = {
   '2017/07/15': { info: 'Disable', disable: true },

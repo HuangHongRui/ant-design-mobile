@@ -3,10 +3,10 @@
 
 import React from 'react';
 
-import List from 'antd-mobile/lib/list';
-import 'antd-mobile/lib/list/style';
-import Icon from 'antd-mobile/lib/icon';
-import 'antd-mobile/lib/icon/style';
+import List from 'antd-mobile-rui/lib/list';
+import 'antd-mobile-rui/lib/list/style';
+import Icon from 'antd-mobile-rui/lib/icon';
+import 'antd-mobile-rui/lib/icon/style';
 
 import { addLocaleData, IntlProvider, FormattedMessage } from 'react-intl';
 import '../../static/style';

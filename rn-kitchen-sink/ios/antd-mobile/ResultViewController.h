@@ -1,6 +1,6 @@
 //
 //  ResultViewController.h
-//  antd-mobile
+//  antd-mobile-rui
 //
 //  Created by silentcloud on 7/4/16.
 //  Copyright © 2016 Facebook. All rights reserved.

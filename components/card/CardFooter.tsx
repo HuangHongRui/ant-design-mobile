@@ -13,7 +13,7 @@ export default class CardFooter extends React.Component<CardFooterProps, any> {
   };
 
   render() {
-    const { prefixCls, content, className, extra, ...restProps } = this.props;
+    const { prefixCls, content, className, extra, ...restProps }: any = this.props;
     const wrapCls = classnames(`${prefixCls}-footer`, className);
 
     return (

@@ -1,6 +1,6 @@
 //
 //  ScanViewController.m
-//  antd-mobile
+//  antd-mobile-rui
 //
 //  Created by silentcloud on 7/4/16.
 //  Copyright © 2016 Facebook. All rights reserved.
@@ -127,14 +127,14 @@
   [self initMask];
   self.viewfinderView.layer.borderWidth = 1 / UIScreen.mainScreen.scale;
   self.viewfinderView.layer.borderColor = [UIColor withRGB:0x808080].CGColor;
-  
+
   self.backButton.layer.cornerRadius = 18;
   self.backButton.clipsToBounds = YES;
   [self.backButton setBackgroundImage:[UIImage imageWithColor1x1:[UIColor withRGB:0x000000 alpha:.5]] forState:UIControlStateNormal];
   self.torchButton.layer.cornerRadius = 18;
   self.torchButton.clipsToBounds = YES;
   [self.torchButton setBackgroundImage:[UIImage imageWithColor1x1:[UIColor withRGB:0x000000 alpha:.5]] forState:UIControlStateNormal];
-  
+
   self.tipsLabel.layer.cornerRadius = 15;
   self.tipsLabel.clipsToBounds = YES;
 }
@@ -157,11 +157,11 @@
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"设备信息"
                                                                    message:@"该设备没有摄像头"
                                                             preferredStyle:UIAlertControllerStyleAlert];
-    
+
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
       [self goBackHandler];
     }];
-    
+
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
     //        [self.view makeToast:@"该设备没有摄像头" duration:3 position:CSToastPositionCenter];
@@ -172,7 +172,7 @@
   AVCaptureSession *session = [[AVCaptureSession alloc] init];
   self.session = session;
   session.sessionPreset = AVCaptureSessionPreset640x480;
-  
+
   // 5 设置预览图层(用来让用户能够看到扫描情况)
   AVCaptureVideoPreviewLayer *previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:session];
   previewLayer.frame = self.view.bounds;
@@ -182,7 +182,7 @@
   //5.3将图层添加到视图的图层
   [self.view.layer insertSublayer:previewLayer atIndex:0];
   self.previewLayer = previewLayer;
-  
+
   // 3 设置输出(Metadata元数据)
   AVCaptureMetadataOutput *outPut = [[AVCaptureMetadataOutput alloc] init];
   // 3.1 设置输出的代理
@@ -201,7 +201,7 @@
   [self.session startRunning];
   /**********************************摄像头结束**********************************/
   [self scanLineAnimation];
-  
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -231,7 +231,7 @@
     (device.torchMode == AVCaptureTorchModeOff ? AVCaptureTorchModeOn : AVCaptureTorchModeOff);
     [device unlockForConfiguration];
   }
-  
+
 }
 // 扫描条上下滚动
 - (void)scanLineAnimation {

@@ -86,9 +86,18 @@ const App = () => (
     >login-password</Button>
 
     <WhiteSpace size="lg" />
+    <Button onClick={() => prompt(
+      'Title',
+      'Info',
+      (a, b, c) => console.log(`a: ${a}, b: ${b}, c: ${c}`),
+      'remark',
+      null,
+      ['a', 'b', 'c'],
+    )}
+    >Rui</Button>
+    <WhiteSpace size="lg" />
   </WingBlank>
 );
-
 
 ReactDOM.render(<App />, mountNode);
 

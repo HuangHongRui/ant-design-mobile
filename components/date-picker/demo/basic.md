@@ -8,7 +8,7 @@ title:
 ````jsx
 
 import { DatePicker, List } from 'antd-mobile-rui';
-import enUs from 'antd-mobile/lib/date-picker/locale/en_US';
+import enUs from 'antd-mobile-rui/lib/date-picker/locale/en_US';
 
 const nowTimeStamp = Date.now();
 const now = new Date(nowTimeStamp);

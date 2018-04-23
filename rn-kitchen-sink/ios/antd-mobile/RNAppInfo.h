@@ -1,6 +1,6 @@
 //
 //  RNAppInfo.h
-//  antd-mobile
+//  antd-mobile-rui
 //
 //  Created by silentcloud on 2016/11/8.
 //  Copyright © 2016年 Facebook. All rights reserved.

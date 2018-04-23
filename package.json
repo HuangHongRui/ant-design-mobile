@@ -1,6 +1,6 @@
 {
   "name": "antd-mobile-rui",
-  "version": "0.3.7",
+  "version": "0.4.3",
   "description": "FanYu Project",
   "homepage": "http://github.com/HuangHongRui/ant-design-mobile",
   "keywords": [
@@ -69,7 +69,7 @@
     "@types/react-native-collapsible": "^0.8.0",
     "@types/react-native-drawer-layout": "^1.3.3",
     "antd": "3.x",
-    "antd-mobile-demo-data": "^0.2.0",
+    "antd-mobile-rui-demo-data": "^0.2.0",
     "antd-tools": "^4.0.2",
     "babel-eslint": "^7.2.3",
     "babel-plugin-import": "^1.6.2",

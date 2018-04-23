@@ -14,7 +14,8 @@ import promptStyle, { IPromptStyle } from './style/prompt.native';
 export interface PropmptContainerProps {
   title: JSX.Element;
   message?: JSX.Element;
-  type?: 'default' | 'login-password' | 'secure-text';
+  // Company Pro
+  type?: 'default' | 'login-password' | 'secure-text' | 'remark' | 'custom';
   defaultValue?: string;
   actions: CallbackOrActions;
   onAnimationEnd?: (visible: boolean) => void;

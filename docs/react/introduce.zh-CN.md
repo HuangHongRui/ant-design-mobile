@@ -3,7 +3,7 @@ order: 0
 title: Ant Design Mobile of React
 ---
 
-`antd-mobile` 是 [Ant Design](http://ant.design) 的移动规范的 React 实现，服务于蚂蚁及口碑无线业务。
+`antd-mobile-rui` 是 [Ant Design](http://ant.design) 的移动规范的 React 实现，服务于蚂蚁及口碑无线业务。
 
 <div class="pic-plus">
   <img width="160" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg">
@@ -48,15 +48,15 @@ title: Ant Design Mobile of React
 
 ### 1. 创建一个项目
 
-可以是已有项目，或者是使用 [dva](https://github.com/dvajs/dva) / create-react(-native)-app 新创建的空项目，你也可以从 [官方示例](https://github.com/ant-design/antd-mobile-samples/tree/master/rn-web) 脚手架里拷贝并修改
+可以是已有项目，或者是使用 [dva](https://github.com/dvajs/dva) / create-react(-native)-app 新创建的空项目，你也可以从 [官方示例](https://github.com/ant-design/antd-mobile-rui-samples/tree/master/rn-web) 脚手架里拷贝并修改
 
-> 参考更多[官方示例集](https://github.com/ant-design/antd-mobile-samples)
+> 参考更多[官方示例集](https://github.com/ant-design/antd-mobile-rui-samples)
 > 或者你可以利用 React 生态圈中的 [各种脚手架](https://github.com/enaqx/awesome-react#boilerplates)
 
 ### 2. 安装
 
 ```bash
-$ npm install antd-mobile --save
+$ npm install antd-mobile-rui --save
 ```
 
 ### 3. 使用
@@ -101,7 +101,7 @@ ReactDOM.render(<Button>Start</Button>, mountNode);
 引入样式：
 
 ```jsx
-import 'antd-mobile/dist/antd-mobile.css';  // or 'antd-mobile/dist/antd-mobile.less'
+import 'antd-mobile-rui/dist/antd-mobile-rui.css';  // or 'antd-mobile-rui/dist/antd-mobile-rui.less'
 ```
 
 ##### 按需加载
@@ -116,12 +116,12 @@ import 'antd-mobile/dist/antd-mobile.css';  // or 'antd-mobile/dist/antd-mobile.
    // .babelrc or babel-loader option
    {
      "plugins": [
-       ["import", { libraryName: "antd-mobile", style: "css" }] // `style: true` 会加载 less 文件
+       ["import", { libraryName: "antd-mobile-rui", style: "css" }] // `style: true` 会加载 less 文件
      ]
    }
    ```
 
-   然后只需从 antd-mobile 引入模块即可，无需单独引入样式。
+   然后只需从 antd-mobile-rui 引入模块即可，无需单独引入样式。
 
    ```jsx
    // babel-plugin-import 会帮助你加载 JS 和 CSS
@@ -131,15 +131,15 @@ import 'antd-mobile/dist/antd-mobile.css';  // or 'antd-mobile/dist/antd-mobile.
 - 手动引入
 
    ```jsx
-   import DatePicker from 'antd-mobile/lib/date-picker';  // 加载 JS
-   import 'antd-mobile/lib/date-picker/style/css';        // 加载 CSS
-   // import 'antd-mobile/lib/date-picker/style';         // 加载 LESS
+   import DatePicker from 'antd-mobile-rui/lib/date-picker';  // 加载 JS
+   import 'antd-mobile-rui/lib/date-picker/style/css';        // 加载 CSS
+   // import 'antd-mobile-rui/lib/date-picker/style';         // 加载 LESS
    ```
 
 ##### 更多增强 (非必须):
 
 > 如何自定义主题？[见此文档](https://github.com/ant-design/ant-design-mobile/blob/master/docs/react/theme-config.zh-CN.md)，
-> 基于 antd-mobile 的自定义 UI 库：[web-custom-ui](https://github.com/ant-design/antd-mobile-samples/tree/master/web-custom-ui) / [web-custom-ui-pro](https://github.com/ant-design/antd-mobile-samples/tree/master/web-custom-ui-pro)
+> 基于 antd-mobile-rui 的自定义 UI 库：[web-custom-ui](https://github.com/ant-design/antd-mobile-rui-samples/tree/master/web-custom-ui) / [web-custom-ui-pro](https://github.com/ant-design/antd-mobile-rui-samples/tree/master/web-custom-ui-pro)
 
 
 #### React-Native 使用方式
@@ -151,7 +151,7 @@ import 'antd-mobile/dist/antd-mobile.css';  // or 'antd-mobile/dist/antd-mobile.
 ```jsx
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import Button from 'antd-mobile/lib/button';
+import Button from 'antd-mobile-rui/lib/button';
 
 class HelloWorldApp extends Component {
   render() {
@@ -172,12 +172,12 @@ AppRegistry.registerComponent('HelloWorldApp', () => HelloWorldApp);
    // .babelrc or babel-loader option
    {
      "plugins": [
-       ["import", { libraryName: "antd-mobile" }] // 与 Web 平台的区别是不需要设置 style
+       ["import", { libraryName: "antd-mobile-rui" }] // 与 Web 平台的区别是不需要设置 style
      ]
    }
    ```
 
-   然后改变从 antd-mobile 引入模块方式即可。
+   然后改变从 antd-mobile-rui 引入模块方式即可。
 
    ```jsx
    import { Button } from 'antd-mobile-rui';
@@ -188,23 +188,23 @@ AppRegistry.registerComponent('HelloWorldApp', () => HelloWorldApp);
 - 手动引入
 
    ```jsx
-   import Button from 'antd-mobile/lib/button';
+   import Button from 'antd-mobile-rui/lib/button';
    ```
 
 ##### 更多增强 (非必须):
 
-> [自定义 RN 主题和单个组件样式](https://github.com/ant-design/antd-mobile-samples/tree/master/rn-custom-ui)
+> [自定义 RN 主题和单个组件样式](https://github.com/ant-design/antd-mobile-rui-samples/tree/master/rn-custom-ui)
 
 
 ## 版本
 
-- 稳定版：[![npm package](http://img.shields.io/npm/v/antd-mobile.svg?style=flat-square)](http://npmjs.com/package/antd-mobile)
-- 开发版：[![npm package](https://img.shields.io/npm/v/antd-mobile/next.svg)](http://npmjs.com/package/antd-mobile)
+- 稳定版：[![npm package](http://img.shields.io/npm/v/antd-mobile-rui.svg?style=flat-square)](http://npmjs.com/package/antd-mobile-rui)
+- 开发版：[![npm package](https://img.shields.io/npm/v/antd-mobile-rui/next.svg)](http://npmjs.com/package/antd-mobile-rui)
 
 ## 体积
 
 - 按需加载：只需引入业务中需要的组件即可，未 import 进来的组件不会打包进来。
-- <p>`./dist/antd-mobile.min.js`的文件<a href="https://ant-design.github.io/ant-design-analysis/" target="_blank">大小及依赖分析</a></p>
+- <p>`./dist/antd-mobile-rui.min.js`的文件<a href="https://ant-design.github.io/ant-design-analysis/" target="_blank">大小及依赖分析</a></p>
 
 ## 浏览器支持
 
@@ -233,7 +233,7 @@ AppRegistry.registerComponent('HelloWorldApp', () => HelloWorldApp);
 
 如果您在使用的过程中碰到问题，可以通过下面几个途径寻求帮助，同时我们也鼓励资深用户通过下面的途径给新人提供帮助。
 
-通过 Stack Overflow 或者 Segment Fault 提问时，建议加上 `antd`/`antd-mobile` 标签。
+通过 Stack Overflow 或者 Segment Fault 提问时，建议加上 `antd`/`antd-mobile-rui` 标签。
 
 1. [Stack Overflow](http://stackoverflow.com/questions/tagged/antd)（推荐）
 2. [Segment Fault](https://segmentfault.com/t/antd)

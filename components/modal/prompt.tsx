@@ -10,8 +10,9 @@ export default function prompt(
   callbackOrActions: CallbackOrActions,
   type = 'default',
   defaultValue = '',
-  placeholders = ['', ''],
+  placeholders = ['', '', ''],
   platform = 'ios',
+  children?: JSX.Element | any,
 ) {
   let closed = false;
 
@@ -23,7 +24,8 @@ export default function prompt(
   if (!callbackOrActions) {
     // console.log('Must specify callbackOrActions');
     return {
-      close: () => {},
+      close: () => {
+      },
     };
   }
 
@@ -96,6 +98,50 @@ export default function prompt(
         </div>
       );
       break;
+    case 'remark':
+      inputDom = (
+        <div className={`${prefixCls}-input-container`}>
+          <div className={`${prefixCls}-input`}>
+            <label>
+              <input
+                type="text"
+                defaultValue={data.text}
+                ref={input => focusFn(input)}
+                onChange={onChange}
+                placeholder={placeholders[0]}
+              />
+            </label>
+          </div>
+          <div className={`${prefixCls}-input`}>
+            <label>
+              <input
+                type="tel"
+                defaultValue={data.tel}
+                onChange={onChange}
+                placeholder={placeholders[1]}
+              />
+            </label>
+          </div>
+          <div className={`${prefixCls}-input ${prefixCls}-textarea`}>
+            <label>
+              <textarea
+                type="remark"
+                defaultValue={data.remark}
+                onChange={onChange as any}
+                placeholder={placeholders[2]}
+              />
+            </label>
+          </div>
+        </div>
+      );
+      break;
+    case 'custom':
+      inputDom = (
+        <div className={`${prefixCls}-input-container`}>
+          {children}
+        </div>
+      );
+      break;
     case 'default':
     default:
       inputDom = (
@@ -136,11 +182,16 @@ export default function prompt(
     if (typeof callback !== 'function') {
       return;
     }
-    const { text = '', password = '' } = data;
+    // Company Pro
+    const { text = '', password = '', tel = '', remark = '' } = data;
     const callbackArgs =
-      type === 'login-password'
+      type === 'remark'
+        ? [text, tel, remark]
+        : type === 'login-password'
         ? [text, password]
-        : type === 'secure-text' ? [password] : [text];
+        : type === 'secure-text'
+          ? [password]
+          : [text];
 
     return callback(...callbackArgs);
   }
@@ -150,7 +201,8 @@ export default function prompt(
     actions = [
       {
         text: '取消',
-        onPress: () => {},
+        onPress: () => {
+        },
       },
       {
         text: '确定',
@@ -172,7 +224,8 @@ export default function prompt(
 
   const footer = actions.map(button => {
     // tslint:disable-next-line:only-arrow-functions
-    const orginPress = button.onPress || function() {};
+    const orginPress = button.onPress || function () {
+    };
     button.onPress = () => {
       if (closed) {
         return;
@@ -185,7 +238,8 @@ export default function prompt(
             closed = true;
             close();
           })
-          .catch(() => {});
+          .catch(() => {
+          });
       } else {
         closed = true;
         close();

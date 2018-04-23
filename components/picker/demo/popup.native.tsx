@@ -2,7 +2,7 @@ import { List, Picker } from 'antd-mobile-rui';
 import React from 'react';
 import { View } from 'react-native';
 
-import { district } from 'antd-mobile-demo-data';
+import { district } from 'antd-mobile-rui-demo-data';
 
 export default class PopupExample extends React.Component<any, any> {
   constructor(props: any) {

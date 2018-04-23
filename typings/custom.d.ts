@@ -1,6 +1,6 @@
 declare module 'antd-mobile-rui';
 
-declare module 'antd-mobile-demo-data';
+declare module 'antd-mobile-rui-demo-data';
 
 declare module 'rmc-list-view';
 
